@@ -1,0 +1,24 @@
+{
+  "name": "noenv",
+  "version": "0.9.0",
+  "description": "noenv",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangkaiyulw/noenv.git"
+  },
+  "keywords": [
+    "conf",
+    "config",
+    "env"
+  ],
+  "author": "Zhang Kai Yu <yeannylam@gmail.com> (http://www.cheunghoiyu.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangkaiyulw/noenv/issues"
+  },
+  "homepage": "https://github.com/zhangkaiyulw/noenv#readme"
+}
