@@ -1,4 +1,5 @@
 {
   "path": "process.env.PATH",
-  "port": "process.env.PORT || 4200"
+  "port": "process.env.PORT || 4200",
+  "other": ["process.env.PORT || 5600", "process.env.SHELL"]
 }
