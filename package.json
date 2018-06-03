@@ -1,6 +1,6 @@
 {
   "name": "noenv",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "noenv",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "config",
     "env"
   ],
-  "files": ["index.js"],
+  "files": ["index.js", "lib/**/*.js"],
   "author": "Zhang Kai Yu <yeannylam@gmail.com>",
   "license": "ISC",
   "bugs": {
