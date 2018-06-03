@@ -1,3 +1,1 @@
-const noenv = require('../../index.js');
-
-console.log(noenv);
+module.exports = require('../../index.js');
