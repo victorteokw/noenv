@@ -1,6 +1,6 @@
 const loadConfig = require('./lib/loadConfig');
 const parseConfig = require('./lib/parseConfig');
-const requirer = require.main.filename;
+const requirer = module.parent.filename;
 
 module.exports = Object.assign(
   {},
