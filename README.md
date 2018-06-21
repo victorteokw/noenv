@@ -1,8 +1,8 @@
 # noenv
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 
-![build status](https://travis-ci.org/zhangkaiyulw/noenv.svg?branch=master)
-
-Noenv automatically loads your config in **only one line**. It even supports dynamic resolving from 'process.env'.
+Noenv automatically loads your environment configurations in **only one line**.
+It supports dynamic resolving from 'process.env' with default value support and non nil checking support.
 
 ## Usage
 
@@ -17,6 +17,9 @@ If `process.env.NODE_ENV` is set, noenv tries to find a configuration file accor
 If `NODE_ENV` is not present, noenv tries to find a default configuration file first. If it's found, then it's loaded and `NODE_ENV` is automatically set to the found file's name. If a default configuration file is not found, noenv tries to load a development configuration file. If it's still not found, noenv tries to load any file that can be loaded.
 
 This behavior is the behavior that you always want. And it doesn't require you to write even a line of code.
+
+Noenv will never merge your config data. It's error-prone and hard to understand when strange behavior happens.
+You should define how your config should look like and make every config file the same format.
 
 ## Naming Convention
 
@@ -55,7 +58,11 @@ With noenv, you can put your configuration files in the directory that you like,
 
 ## Dynamic Resolving
 
-It's not recommended to use this. However some platforms depend heavily on environment variables. In these cases, we can config like this.
+For security reasons,
+
+It's not recommended to use this. However in some certain cases you may want to get configuration from environment variables.
+In these cases, noenv helps you manage your environment variable mapping and make them clearly in only one place.
+It supports default value and non nil checking.
 
 ```json
 {
@@ -77,6 +84,7 @@ You can also provide a default value for it with the following syntax.
 
 ```json
 {
+  "host": "process.env.HOST || 'www.example.com'",
   "port": "process.env.PORT || 3000"
 }
 ```
@@ -90,3 +98,10 @@ npm install noenv --save
 ## Issues
 
 For problems and issues, please open issues [here](https://github.com/zhangkaiyulw/noenv/issues).
+
+[npm-image]: https://badge.fury.io/js/noenv.svg
+[npm-url]: https://npmjs.org/package/noenv
+[travis-image]: https://travis-ci.org/zhangkaiyulw/noenv.svg?branch=master
+[travis-url]: https://travis-ci.org/zhangkaiyulw/noenv
+[daviddm-image]: https://david-dm.org/zhangkaiyulw/noenv.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/zhangkaiyulw/noenv
