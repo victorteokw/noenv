@@ -58,8 +58,6 @@ With noenv, you can put your configuration files in the directory that you like,
 
 ## Dynamic Resolving
 
-For security reasons,
-
 It's not recommended to use this. However in some certain cases you may want to get configuration from environment variables.
 In these cases, noenv helps you manage your environment variable mapping and make them clearly in only one place.
 It supports default value and non nil checking.
