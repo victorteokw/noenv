@@ -1,6 +1,6 @@
 {
   "name": "noenv",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "noenv",
   "main": "index.js",
   "scripts": {
@@ -27,5 +27,8 @@
   "homepage": "https://github.com/zhangkaiyulw/noenv#readme",
   "devDependencies": {
     "jest": "^23.1.0"
+  },
+  "dependencies": {
+    "find-dominant-file": "^1.0.0"
   }
 }
