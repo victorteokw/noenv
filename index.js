@@ -5,5 +5,5 @@ const requirer = module.parent.filename;
 module.exports = Object.assign(
   {},
   parseConfig(loadConfig(requirer)),
-  {env: process.env.NODE_ENV}
+  { env: process.env.NODE_ENV }
 );

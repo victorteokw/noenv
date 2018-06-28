@@ -26,6 +26,8 @@
   },
   "homepage": "https://github.com/zhangkaiyulw/noenv#readme",
   "devDependencies": {
+    "eslint": "^5.0.1",
+    "eslint-config-man": "^1.0.0",
     "jest": "^23.1.0"
   },
   "dependencies": {
