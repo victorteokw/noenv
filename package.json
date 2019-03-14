@@ -1,6 +1,6 @@
 {
   "name": "noenv",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "noenv",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,7 @@
   ],
   "files": [
     "index.js",
+    "index.d.ts",
     "lib/**/*.js"
   ],
   "author": "Zhang Kai Yu <yeannylam@gmail.com>",
@@ -26,11 +27,11 @@
   },
   "homepage": "https://github.com/zhangkaiyulw/noenv#readme",
   "devDependencies": {
-    "eslint": "^5.0.1",
-    "eslint-config-man": "^1.0.0",
-    "jest": "^23.1.0"
+    "eslint": "^5.15.1",
+    "eslint-config-man": "^1.0.4",
+    "jest": "^24.5.0"
   },
   "dependencies": {
-    "find-dominant-file": "^1.0.0"
+    "find-dominant-file": "^1.1.0"
   }
 }
