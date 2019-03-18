@@ -87,6 +87,14 @@ You can also provide a default value for it with the following syntax.
 }
 ```
 
+You can set environment variable if it's not set by the following syntax.
+
+```json
+{
+  "env.used.in.some.dependency": "process.env.CREDENTIAL ||= htkdiwlrtt6"
+}
+```
+
 ## Installation
 
 ```
