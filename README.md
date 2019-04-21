@@ -1,5 +1,10 @@
 # noenv
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+[![NPM version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
+[![Test Coverage][cov-image]][cov-url]
+[![Dependency Status][daviddm-image]][daviddm-url]
+[![License][license-image]][license-url]
+[![PR Welcome][pr-image]][pr-url]
 
 Noenv automatically loads your environment configurations in **only one line**.
 It supports dynamic resolving from 'process.env' with default value support and non nil checking support.
@@ -36,15 +41,20 @@ With noenv, you can put your configuration files in the directory that you like,
 * envs
 * environment
 * environments
+* setting
+* settings
 
 ### Supported File Extensions
 
+_You need to install the corresponding parser yourselves._
+
 * json
 * js
+* tson
 * ts
 * cson
 * coffee
-* es6
+* yaml
 
 ### Supported Default Filenames
 
@@ -109,5 +119,11 @@ For problems and issues, please open issues [here](https://github.com/zhangkaiyu
 [npm-url]: https://npmjs.org/package/noenv
 [travis-image]: https://travis-ci.org/zhangkaiyulw/noenv.svg?branch=master
 [travis-url]: https://travis-ci.org/zhangkaiyulw/noenv
+[cov-image]: https://codecov.io/gh/zhangkaiyulw/noenv/branch/master/graph/badge.svg
+[cov-url]: https://codecov.io/gh/zhangkaiyulw/noenv
 [daviddm-image]: https://david-dm.org/zhangkaiyulw/noenv.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/zhangkaiyulw/noenv
+[license-image]: https://img.shields.io/github/license/zhangkaiyulw/noenv.svg
+[license-url]: https://github.com/zhangkaiyulw/noenv/blob/master/LICENSE
+[pr-image]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg
+[pr-url]: https://github.com/zhangkaiyulw/noenv/blob/master/CONTRIBUTING.md

@@ -1,6 +1,6 @@
 {
   "name": "noenv",
-  "version": "1.0.0",
+  "version": "2.0.0.alpha.1",
   "description": "noenv",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,9 @@
   "keywords": [
     "conf",
     "config",
-    "env"
+    "env",
+    "noenv",
+    "dotenv"
   ],
   "files": [
     "index.js",
@@ -26,12 +28,13 @@
     "url": "https://github.com/zhangkaiyulw/noenv/issues"
   },
   "homepage": "https://github.com/zhangkaiyulw/noenv#readme",
-  "devDependencies": {
-    "eslint": "^5.15.1",
-    "eslint-config-man": "^1.0.4",
-    "jest": "^24.5.0"
-  },
   "dependencies": {
-    "find-dominant-file": "^1.1.0"
+    "find-dominant-file": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-man": "^1.0.4",
+    "eslint-plugin-jest": "^22.4.1",
+    "jest": "^24.7.1"
   }
 }

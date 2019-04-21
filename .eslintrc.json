@@ -1,3 +1,7 @@
 {
-  "extends": "man"
+  "extends": "man",
+  "plugins": ["jest"],
+  "env": {
+    "jest": true
+  }
 }
