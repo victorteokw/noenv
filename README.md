@@ -50,7 +50,6 @@ _You need to install the corresponding parser yourselves._
 
 * json
 * js
-* tson
 * ts
 * cson
 * coffee
