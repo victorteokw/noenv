@@ -1,15 +1,19 @@
-const loadConfig = require('./lib/loadConfig');
 const parseConfig = require('./lib/parseConfig');
-const locateProjRootDir = require('./lib/locateProjRootDir');
+const loadConfigFile = require('./lib/loadConfigFile');
+const resolveEntryConfFile = require('./lib/resolveEntryConfFile');
 const locateConfDir = require('./lib/locateConfDir');
+const locateProjRootDir = require('./lib/locateProjRootDir');
+
 
 module.exports = Object.assign(
   {},
   parseConfig(
-    loadConfig(
-      locateConfDir(
-        locateProjRootDir(
-          module.parent.filename || process.cwd()
+    loadConfigFile(
+      resolveEntryConfFile(
+        locateConfDir(
+          locateProjRootDir(
+            module.parent.filename || process.cwd()
+          )
         )
       )
     )
