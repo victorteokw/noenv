@@ -12,6 +12,7 @@ module.exports =
         resolveEntryConfFile(
           locateConfDir(
             locateProjRootDir(
+              // This value is cached, however, noenv is loaded only once
               module.parent.filename || process.cwd()
             )
           )
