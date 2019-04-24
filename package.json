@@ -29,7 +29,8 @@
   },
   "homepage": "https://github.com/zhangkaiyulw/noenv#readme",
   "dependencies": {
-    "find-dominant-file": "^2.0.0"
+    "find-dominant-file": "^2.0.0",
+    "load-any-file": "^1.0.1"
   },
   "devDependencies": {
     "coffeescript": "^2.4.1",

@@ -1,6 +1,6 @@
 const assignEnv = require('./lib/assignEnv');
 const parseConfig = require('./lib/parseConfig');
-const loadConfigFile = require('./lib/loadConfigFile');
+const loadFile = require('load-any-file');
 const resolveEntryConfFile = require('./lib/resolveEntryConfFile');
 const locateConfDir = require('./lib/locateConfDir');
 const locateProjRootDir = require('./lib/locateProjRootDir');
@@ -8,7 +8,7 @@ const locateProjRootDir = require('./lib/locateProjRootDir');
 module.exports =
   assignEnv(
     parseConfig(
-      loadConfigFile(
+      loadFile(
         resolveEntryConfFile(
           locateConfDir(
             locateProjRootDir(
